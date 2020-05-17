@@ -68,6 +68,7 @@ def format_datetime(value, format='medium'):
   elif format == 'medium':
       format="EE MM, dd, y h:mma"
   return babel.dates.format_datetime(date, format)
+  #TODO: fix the function so dates can be displayed on frontend
 
 app.jinja_env.filters['datetime'] = format_datetime
 
